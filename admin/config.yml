@@ -5,6 +5,15 @@ backend:
 media_folder: "content/uploads"
 public_folder: "/uploads"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name:gnzhxcau
+    api_key: 869491552173931
+    
+
+
+
 collections:
   - name: posts
     label: Posts
