@@ -5,10 +5,13 @@ templateEngineOverride: njk
 ---
 
 <section class="hero reveal">
-  <p class="eyebrow">Personal Archive</p>
-  <h1>A Life, Recorded</h1>
-  <p class="hero-sub">Words I've written, moments I've captured, and poems I've spoken aloud — kept in one place, built to last.</p>
-  <a href="#writing" class="scroll-cue" aria-label="Scroll to content"><span></span></a>
+  <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <p class="eyebrow">Personal Archive</p>
+    <h1>A Life, Recorded</h1>
+    <p class="hero-sub">Words I've written, moments I've captured, and poems I've spoken aloud — kept in one place, built to last.</p>
+    <a href="#writing" class="scroll-cue" aria-label="Scroll to content"><span></span></a>
+  </div>
 </section>
 
 <section id="writing" class="section reveal">
