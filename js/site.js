@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.15 });
   revealEls.forEach((el) => observer.observe(el));
 
+  // Safety net: force visibility after 2s no matter what,
+  // so content never stays permanently hidden.
+  setTimeout(() => {
+    document.querySelectorAll(".reveal:not(.in-view)").forEach((el) => {
+      el.classList.add("in-view");
+    });
+  }, 2000);
+
   const header = document.getElementById("site-header");
   const backToTop = document.getElementById("back-to-top");
 
