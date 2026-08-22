@@ -5,7 +5,7 @@ layout: layouts/base.njk
   <h1>{{ title }}</h1>
   <time>{{ date | readableDate }}</time>
 
-  <div class="audio-player" data-src="{{ page.url }}{{ audio }}">
+  <div class="audio-player" data-src="{{ audio }}">
     <button class="play-btn" aria-label="Play">▶</button>
     <div class="progress-container">
       <div class="progress-bar"></div>

@@ -40,7 +40,7 @@ title: Home
     </div>
     <div class="photo-grid">
       {% for img in album.data.images %}
-      <img src="{{ album.url }}{{ img }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger">
+      <img src="{{ img }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger">
       {% endfor %}
     </div>
   </div>
@@ -58,7 +58,7 @@ title: Home
       <h3>{{ poem.data.title }}</h3>
       <time>{{ poem.data.date | readableDate }}</time>
     </div>
-    <div class="audio-player" data-src="{{ poem.url }}{{ poem.data.audio }}">
+   <div class="audio-player" data-src="{{ poem.data.audio }}">
       <button class="play-btn" aria-label="Play">▶</button>
       <div class="progress-container"><div class="progress-bar"></div></div>
       <span class="time-display">0:00</span>

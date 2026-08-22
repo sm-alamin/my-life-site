@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "content/photos": "photos" });
   eleventyConfig.addPassthroughCopy({ "content/poems": "poems" });
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("admin");
 
   eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
 

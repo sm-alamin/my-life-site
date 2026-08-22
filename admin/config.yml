@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: posts
+    label: Posts
+    folder: content/posts
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: "layouts/post.njk" }
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: photos
+    label: Photo Albums
+    folder: content/photos
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/album"
+    media_folder: ""
+    public_folder: "/photos/{{slug}}"
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: "layouts/gallery.njk" }
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /photos/first-album/" }
+      - { label: Images, name: images, widget: list, field: { label: Image, name: image, widget: image } }
+      - { label: Description, name: body, widget: markdown, required: false }
+
+  - name: poems
+    label: Poems
+    folder: content/poems
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/poem"
+    media_folder: ""
+    public_folder: "/poems/{{slug}}"
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: "layouts/poem.njk" }
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /poems/first-poem/" }
+      - { label: Audio File, name: audio, widget: file }
+      - { label: Poem Text, name: body, widget: markdown, required: false }
