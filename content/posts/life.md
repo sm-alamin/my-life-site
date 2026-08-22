@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Life
+title: Earth
 date: 2026-08-22
 ---
 
