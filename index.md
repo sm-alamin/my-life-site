@@ -79,7 +79,7 @@ title: Home
   <button id="new-quote-btn" class="new-quote-btn">New Quote →</button>
 </section>
 
-<script type="application/json" id="quotes-data">{{ quotes | jsonify | safe }}</script>
+<script type="application/json" id="quotes-data">{{ quotes | jsonify }}</script>
 
 <div id="lightbox-overlay" class="lightbox-overlay">
   <img id="lightbox-img" src="" alt="">
