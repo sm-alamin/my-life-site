@@ -15,17 +15,30 @@ title: Home
     <p class="eyebrow">01 — Writing</p>
     <h2>Posts</h2>
   </div>
+
+  <div class="writing-controls">
+    <input type="text" id="post-search" class="search-input" placeholder="Search writings...">
+    <div class="filter-tabs" id="filter-tabs">
+      <button class="filter-tab active" data-filter="All">All</button>
+      <button class="filter-tab" data-filter="Stories">Stories</button>
+      <button class="filter-tab" data-filter="Poetry">Poetry</button>
+      <button class="filter-tab" data-filter="Islamic">Islamic</button>
+      <button class="filter-tab" data-filter="Personal">Personal</button>
+    </div>
+  </div>
+
   <div class="card-grid" id="posts-grid">
-  {% for post in collections.posts | reverse %}
-  <a class="card reveal" href="{{ post.url }}">
-    <time>{{ post.data.date | readableDate }}</time>
-    <h3>{{ post.data.title }}</h3>
-    <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
-    <span class="card-link">Read →</span>
-  </a>
-  {% endfor %}
-</div>
-<nav class="pagination" id="posts-pagination"></nav>
+    {% for post in collections.posts | reverse %}
+    <a class="card reveal" href="{{ post.url }}" data-category="{{ post.data.category }}" data-title="{{ post.data.title | lower }}">
+      <time>{{ post.data.date | readableDate }}</time>
+      <h3>{{ post.data.title }}</h3>
+      <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
+      <span class="card-link">Read →</span>
+    </a>
+    {% endfor %}
+  </div>
+  <p id="no-results" class="no-results" style="display:none;">No writings match your search.</p>
+  <nav class="pagination" id="posts-pagination"></nav>
 </section>
 
 <section id="photos" class="section reveal">

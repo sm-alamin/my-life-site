@@ -269,3 +269,50 @@ body {
 .new-quote-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
 
+.writing-controls {
+  margin-bottom: 28px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 30px;
+  border: 1px solid var(--ink-faint);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: 14px;
+  outline: none;
+  transition: border-color 0.25s var(--ease);
+}
+.search-input:focus { border-color: var(--accent); }
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  background: none;
+  border: 1px solid var(--ink-faint);
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+.filter-tab:hover { border-color: var(--accent); color: var(--accent); }
+.filter-tab.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+.no-results {
+  color: var(--ink-muted);
+  font-style: italic;
+  padding: 20px 0;
+}
+

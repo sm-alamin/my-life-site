@@ -112,3 +112,40 @@ document.addEventListener("DOMContentLoaded", () => {
   showRandomQuote();
   if (btn) btn.addEventListener("click", showRandomQuote);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("post-search");
+  const filterTabs = document.querySelectorAll(".filter-tab");
+  const grid = document.getElementById("posts-grid");
+  const noResults = document.getElementById("no-results");
+  if (!grid) return;
+
+  const cards = Array.from(grid.querySelectorAll(".card"));
+  let activeFilter = "All";
+
+  function applyFilters() {
+    const query = (searchInput.value || "").toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const matchesCategory = activeFilter === "All" || card.dataset.category === activeFilter;
+      const matchesSearch = !query || card.dataset.title.includes(query);
+      const show = matchesCategory && matchesSearch;
+      card.style.display = show ? "" : "none";
+      if (show) visibleCount++;
+    });
+
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
+    setupPagination("posts-grid", "posts-pagination", 5);
+  }
+
+  if (searchInput) searchInput.addEventListener("input", applyFilters);
+
+  filterTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      filterTabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      activeFilter = tab.dataset.filter;
+      applyFilters();
+    });
+  });
+});
