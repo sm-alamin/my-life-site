@@ -8,7 +8,7 @@ public_folder: "/uploads"
 media_library:
   name: cloudinary
   config:
-    cloud_name:gnzhxcau
+    cloud_name: gnzhxcau
     api_key: 869491552173931
     
 
