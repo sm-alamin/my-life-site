@@ -191,3 +191,34 @@ footer { max-width: 860px; margin: 0 auto; padding: 24px 24px 40px; font-family:
 }
 .pagination button:hover { border-color: var(--accent); color: var(--accent); }
 .pagination button.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+[data-theme="dark"] {
+  --paper: #1A2226;
+  --ink: #E8EBE9;
+  --ink-muted: #9AA5A1;
+  --ink-faint: #2E393E;
+  --white: #232E33;
+}
+
+[data-theme="dark"] .lightbox-overlay {
+  background: rgba(0, 0, 0, 0.96);
+}
+
+body {
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--ink-faint);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s var(--ease);
+}
+.theme-toggle:hover { border-color: var(--accent); transform: scale(1.05); }
