@@ -434,3 +434,13 @@ body {
 @media (max-width: 500px) {
   .audio-player { flex-wrap: wrap; }
 }
+
+.format-warning {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  padding: 8px 4px;
+}
+.format-warning a {
+  color: var(--accent);
+  font-weight: 600;
+}
