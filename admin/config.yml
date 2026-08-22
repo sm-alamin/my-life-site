@@ -24,8 +24,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/album"
-    media_folder: ""
-    public_folder: "/photos/{{slug}}"
+    media_folder: "content/uploads/photos"
+    public_folder: "/uploads/photos"
     fields:
       - { label: Layout, name: layout, widget: hidden, default: "layouts/gallery.njk" }
       - { label: Title, name: title, widget: string }
@@ -39,8 +39,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{slug}}/poem"
-    media_folder: ""
-    public_folder: "/poems/{{slug}}"
+    media_folder: "content/uploads/poems"
+    public_folder: "/uploads/poems"
     fields:
       - { label: Layout, name: layout, widget: hidden, default: "layouts/poem.njk" }
       - { label: Title, name: title, widget: string }
