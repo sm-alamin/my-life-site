@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Life
 date: 2026-08-22
+category: Personal
 ---
 
 
