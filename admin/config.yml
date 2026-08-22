@@ -29,7 +29,6 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: "layouts/gallery.njk" }
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
-      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /photos/first-album/" }
       - { label: Images, name: images, widget: list, field: { label: Image, name: image, widget: image } }
       - { label: Description, name: body, widget: markdown, required: false }
 
@@ -45,6 +44,5 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: "layouts/poem.njk" }
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
-      - { label: Permalink, name: permalink, widget: string, hint: "e.g. /poems/first-poem/" }
       - { label: Audio File, name: audio, widget: file }
       - { label: Poem Text, name: body, widget: markdown, required: false }
