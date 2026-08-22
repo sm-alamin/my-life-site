@@ -1,17 +1,18 @@
 ---
 layout: layouts/base.njk
 ---
-<article>
+<article class="detail-card">
+  <a href="/#poems" class="back-link">← Back to Poems</a>
+  <p class="eyebrow">{{ date | readableDate }}</p>
   <h1>{{ title }}</h1>
-  <time>{{ date | readableDate }}</time>
 
   <div class="audio-player" data-src="{{ audio }}">
     <button class="play-btn" aria-label="Play">▶</button>
-    <div class="progress-container">
-      <div class="progress-bar"></div>
-    </div>
+    <div class="progress-container"><div class="progress-bar"></div></div>
     <span class="time-display">0:00</span>
   </div>
 
-  {{ content | safe }}
+  <div class="detail-content">
+    {{ content | safe }}
+  </div>
 </article>

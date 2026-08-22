@@ -23,4 +23,36 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  setupPagination("posts-grid", "posts-pagination", 5);
 });
+
+function setupPagination(gridId, paginationId, pageSize) {
+  const grid = document.getElementById(gridId);
+  const pagination = document.getElementById(paginationId);
+  if (!grid || !pagination) return;
+
+  const items = Array.from(grid.children);
+  const totalPages = Math.ceil(items.length / pageSize);
+  if (totalPages <= 1) return;
+
+  function showPage(page) {
+    items.forEach((item, i) => {
+      const itemPage = Math.floor(i / pageSize) + 1;
+      item.style.display = itemPage === page ? "" : "none";
+    });
+    pagination.querySelectorAll("button").forEach((btn) => {
+      btn.classList.toggle("active", Number(btn.dataset.page) === page);
+    });
+  }
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    btn.dataset.page = i;
+    btn.addEventListener("click", () => showPage(i));
+    pagination.appendChild(btn);
+  }
+
+  showPage(1);
+}

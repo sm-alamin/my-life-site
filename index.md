@@ -15,16 +15,17 @@ title: Home
     <p class="eyebrow">01 — Writing</p>
     <h2>Posts</h2>
   </div>
-  <div class="card-grid">
-    {% for post in collections.posts %}
-    <a class="card reveal" href="{{ post.url }}">
-      <time>{{ post.data.date | readableDate }}</time>
-      <h3>{{ post.data.title }}</h3>
-      <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
-      <span class="card-link">Read →</span>
-    </a>
-    {% endfor %}
-  </div>
+  <div class="card-grid" id="posts-grid">
+  {% for post in collections.posts %}
+  <a class="card reveal" href="{{ post.url }}">
+    <time>{{ post.data.date | readableDate }}</time>
+    <h3>{{ post.data.title }}</h3>
+    <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
+    <span class="card-link">Read →</span>
+  </a>
+  {% endfor %}
+</div>
+<nav class="pagination" id="posts-pagination"></nav>
 </section>
 
 <section id="photos" class="section reveal">

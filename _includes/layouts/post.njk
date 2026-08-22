@@ -1,8 +1,11 @@
 ---
 layout: layouts/base.njk
 ---
-<article>
+<article class="detail-card">
+  <a href="/#writing" class="back-link">← Back to Writing</a>
+  <p class="eyebrow">{{ date | readableDate }}</p>
   <h1>{{ title }}</h1>
-  <time>{{ date | readableDate }}</time>
-  {{ content | safe }}
+  <div class="detail-content">
+    {{ content | safe }}
+  </div>
 </article>
