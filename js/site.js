@@ -85,3 +85,30 @@ document.addEventListener("DOMContentLoaded", () => {
     setIcon();
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dataEl = document.getElementById("quotes-data");
+  if (!dataEl) return;
+
+  const quotes = JSON.parse(dataEl.textContent);
+  const textEl = document.getElementById("quote-text");
+  const authorEl = document.getElementById("quote-author");
+  const btn = document.getElementById("new-quote-btn");
+
+  let lastIndex = -1;
+
+  function showRandomQuote() {
+    let index;
+    do {
+      index = Math.floor(Math.random() * quotes.length);
+    } while (index === lastIndex && quotes.length > 1);
+    lastIndex = index;
+
+    const q = quotes[index];
+    textEl.textContent = `"${q.text}"`;
+    authorEl.textContent = q.author ? `— ${q.author}` : "— Al Amin";
+  }
+
+  showRandomQuote();
+  if (btn) btn.addEventListener("click", showRandomQuote);
+});

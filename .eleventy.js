@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "content/poems": "poems" });
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addFilter("jsonify", (obj) => JSON.stringify(obj));
 
   eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
 

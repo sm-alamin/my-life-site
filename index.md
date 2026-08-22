@@ -67,6 +67,19 @@ title: Home
   </div>
   {% endfor %}
 </section>
+<section id="quotes" class="section reveal">
+  <div class="section-head">
+    <p class="eyebrow">04 — Quotes</p>
+    <h2>Quote Wall</h2>
+  </div>
+  <div class="quote-card">
+    <p class="quote-text" id="quote-text"></p>
+    <p class="quote-author" id="quote-author"></p>
+  </div>
+  <button id="new-quote-btn" class="new-quote-btn">New Quote →</button>
+</section>
+
+<script type="application/json" id="quotes-data">{{ quotes | jsonify | safe }}</script>
 
 <div id="lightbox-overlay" class="lightbox-overlay">
   <img id="lightbox-img" src="" alt="">
