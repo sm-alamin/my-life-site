@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Home
+templateEngineOverride: njk
 ---
 
 <section class="hero reveal">
@@ -29,10 +30,10 @@ title: Home
 
   <div class="card-grid" id="posts-grid">
     {% for post in collections.posts | reverse %}
-    <a class="card reveal" href="{{ post.url }}" data-category="{{ post.data.category }}" data-title="{{ post.data.title | downcase }}">
+    <a class="card reveal" href="{{ post.url }}" data-category="{{ post.data.category }}" >data-title="{{ post.data.title | lower }}"
       <time>{{ post.data.date | readableDate }}</time>
       <h3>{{ post.data.title }}</h3>
-      <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
+     <p class="card-excerpt">{{ post.templateContent | striptags | truncate(140) }}</p>
       <span class="card-link">Read →</span>
     </a>
     {% endfor %}
@@ -92,7 +93,7 @@ title: Home
   <button id="new-quote-btn" class="new-quote-btn">New Quote →</button>
 </section>
 
-<script type="application/json" id="quotes-data">{{ quotes | jsonify }}</script>
+<script type="application/json" id="quotes-data">{{ quotes | jsonify | safe }}</script>
 
 <div id="lightbox-overlay" class="lightbox-overlay">
   <img id="lightbox-img" src="" alt="">
