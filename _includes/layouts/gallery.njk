@@ -9,7 +9,7 @@ layout: layouts/base.njk
     {{ content | safe }}
   </div>
 
-  <div class="photo-grid">
+  <div class="masonry-grid">
     {% for img in images %}
       <img src="{{ img }}" alt="{{ title }}" loading="lazy" class="lightbox-trigger">
     {% endfor %}

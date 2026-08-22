@@ -372,3 +372,34 @@ body {
   .hero-content > * { animation: none; opacity: 1; transform: none; }
 }
 
+.masonry-grid {
+  column-count: 3;
+  column-gap: 12px;
+  margin-top: 24px;
+}
+
+.masonry-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  break-inside: avoid;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.masonry-grid img:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: var(--shadow-hover);
+}
+
+@media (max-width: 900px) {
+  .masonry-grid { column-count: 2; }
+}
+@media (max-width: 560px) {
+  .masonry-grid { column-count: 1; }
+}
+
+

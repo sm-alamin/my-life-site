@@ -56,11 +56,11 @@ templateEngineOverride: njk
       <h3>{{ album.data.title }}</h3>
       <time>{{ album.data.date | readableDate }}</time>
     </div>
-    <div class="photo-grid">
-      {% for img in album.data.images %}
-      <img src="{{ img }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger">
-      {% endfor %}
-    </div>
+    <div class="masonry-grid">
+  {% for img in album.data.images %}
+  <img src="{{ img }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger">
+  {% endfor %}
+</div>
   </div>
   {% endfor %}
 </section>
