@@ -16,7 +16,7 @@ title: Home
     <h2>Posts</h2>
   </div>
   <div class="card-grid" id="posts-grid">
-  {% for post in collections.posts %}
+  {% for post in collections.posts | reverse %}
   <a class="card reveal" href="{{ post.url }}">
     <time>{{ post.data.date | readableDate }}</time>
     <h3>{{ post.data.title }}</h3>
@@ -33,7 +33,7 @@ title: Home
     <p class="eyebrow">02 — Photos</p>
     <h2>Gallery</h2>
   </div>
-  {% for album in collections.photos %}
+  {% for album in collections.photos | reverse %}
   <div class="album-block reveal">
     <div class="section-head small">
       <h3>{{ album.data.title }}</h3>
@@ -53,7 +53,7 @@ title: Home
     <p class="eyebrow">03 — Poems</p>
     <h2>Recitations</h2>
   </div>
-  {% for poem in collections.poems %}
+  {% for poem in collections.poems | reverse %}
   <div class="poem-block reveal">
     <div class="section-head small">
       <h3>{{ poem.data.title }}</h3>
