@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Journey by train
 date: 2026-08-22
+category: Personal
 ---
 
 
