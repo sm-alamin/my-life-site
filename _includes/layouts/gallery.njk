@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  <time>{{ date | readableDate }}</time>
+  {{ content | safe }}
+
+  <div class="photo-grid">
+    {% for img in images %}
+      <img
+        src="{{ page.url }}{{ img }}"
+        alt="{{ title }}"
+        loading="lazy"
+        class="lightbox-trigger"
+      >
+    {% endfor %}
+  </div>
+</article>
+
+<div id="lightbox-overlay" class="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="">
+</div>
+

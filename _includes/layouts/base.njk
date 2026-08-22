@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | My Life Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a href="/" class="site-title">
+      <span>A Life, Recorded</span>
+      <svg class="squiggle" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,6 C15,0 25,12 40,6 C55,0 65,12 80,6 C95,0 105,12 120,6 C135,0 145,12 160,6 C175,0 185,12 200,6" />
+      </svg>
+    </a>
+    <nav>
+      <a href="/#writing">Writing</a>
+      <a href="/#photos">Photos</a>
+      <a href="/#poems">Poems</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ currentYear }} — Built to last a lifetime.</p>
+  </footer>
+
+  <script src="/js/lightbox.js"></script>
+  <script src="/js/player.js"></script>
+  <script src="/js/site.js"></script>
+</body>
+</html>
