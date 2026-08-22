@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Earth
+title: World
 date: 2026-08-22
 ---
 
