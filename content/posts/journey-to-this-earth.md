@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: Journey to this earth
 date: 2026-08-22
+category: Islamic
 ---
 
 
