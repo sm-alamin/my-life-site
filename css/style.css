@@ -403,3 +403,34 @@ body {
 }
 
 
+.speed-btn {
+  background: none;
+  border: 1px solid var(--ink-faint);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+  flex-shrink: 0;
+}
+.speed-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--ink-muted);
+  border: 1px solid transparent;
+  flex-shrink: 0;
+  transition: all 0.25s var(--ease);
+}
+.download-btn:hover { color: var(--accent); border-color: var(--ink-faint); }
+
+@media (max-width: 500px) {
+  .audio-player { flex-wrap: wrap; }
+}

@@ -77,10 +77,12 @@ templateEngineOverride: njk
       <time>{{ poem.data.date | readableDate }}</time>
     </div>
    <div class="audio-player" data-src="{{ poem.data.audio }}">
-      <button class="play-btn" aria-label="Play">▶</button>
-      <div class="progress-container"><div class="progress-bar"></div></div>
-      <span class="time-display">0:00</span>
-    </div>
+  <button class="play-btn" aria-label="Play">▶</button>
+  <div class="progress-container"><div class="progress-bar"></div></div>
+  <span class="time-display">0:00</span>
+  <button class="speed-btn" aria-label="Playback speed">1x</button>
+  <a class="download-btn" href="{{ poem.data.audio }}" download aria-label="Download recitation">⬇</a>
+</div>
   </div>
   {% endfor %}
 </section>
