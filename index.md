@@ -29,7 +29,7 @@ title: Home
 
   <div class="card-grid" id="posts-grid">
     {% for post in collections.posts | reverse %}
-    <a class="card reveal" href="{{ post.url }}" data-category="{{ post.data.category }}" data-title="{{ post.data.title | lower }}">
+    <a class="card reveal" href="{{ post.url }}" data-category="{{ post.data.category }}" data-title="{{ post.data.title | downcase }}">
       <time>{{ post.data.date | readableDate }}</time>
       <h3>{{ post.data.title }}</h3>
       <p class="card-excerpt">{{ post.templateContent | strip_html | truncate: 140 }}</p>
