@@ -444,3 +444,8 @@ body {
   color: var(--accent);
   font-weight: 600;
 }
+
+
+:lang(bn), .bn {
+  font-family: "Hind Siliguri", var(--font-body);
+}

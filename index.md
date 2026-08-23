@@ -6,10 +6,17 @@ templateEngineOverride: njk
 
 <section class="hero reveal">
   <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
-  <div class="hero-content">
-    <p class="eyebrow">Personal Archive</p>
-    <h1>A Life, Recorded</h1>
-    <p class="hero-sub">Words I've written, moments I've captured, and poems I've spoken aloud — kept in one place, built to last.</p>
+  <div class="hero-content"lang="bn" >
+    <p class="eyebrow">যা হারিয়ে যায়, তা-ই লিখে রাখি</p>
+    <h1>এক জীবনের কিছু পৃষ্ঠা</h1>
+    <p class="hero-sub">
+      কিছু কথা কাগজে রয়ে যায়,<br>
+      কিছু মুহূর্ত ছবিতে,<br>
+      কিছু অনুভূতি কবিতার পঙ্‌ক্তিতে,<br>
+      আর কিছু স্মৃতি কেবল কণ্ঠে বেঁচে থাকে।<br>
+      এই আমার ছোট্ট সংরক্ষণাগার—<br>
+      একদিন ফিরে তাকাব বলে।
+    </p>
     <a href="#writing" class="scroll-cue" aria-label="Scroll to content"><span></span></a>
   </div>
 </section>
