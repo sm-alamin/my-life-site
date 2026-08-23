@@ -1,0 +1,45 @@
+---
+layout: layouts/gallery.njk
+title: যে বিকেল ছবির মতো ছিল
+date: 2026-08-23
+images:
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462209/IMG_20240716_185835.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462209/IMG_20240716_185829.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462207/IMG_20240716_185832.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462206/IMG_20240716_185826.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462205/IMG_20240716_185838.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462203/IMG_20240716_185841.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462199/IMG_20240724_185442.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462198/IMG_20240724_185439.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462186/IMG_20250815_175621.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462187/IMG_20250815_175632.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462185/IMG_20250815_175820.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462183/IMG_20250815_175831.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462182/IMG_20250815_175826.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462181/IMG_20250815_180145.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462181/IMG_20250815_180141.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462180/IMG_20250815_175918.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462179/IMG_20250815_180037.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462179/IMG_20250815_180411.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462176/IMG_20250815_180507.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462176/IMG_20250815_180510.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462176/IMG_20250815_180414.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462175/IMG_20250815_180722.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462174/IMG_20250815_180825.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462173/IMG_20250815_180823.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462173/IMG_20250815_180515.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462173/IMG_20250815_180728.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462173/IMG_20250815_180735.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462170/IMG_20250815_180740.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462170/IMG_20250815_180958.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462169/IMG_20250815_181024.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462169/IMG_20250815_181352.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462168/IMG_20250815_181219.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462167/IMG_20250815_181751.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462166/IMG_20250815_181341.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462165/IMG_20250815_181754.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462164/IMG_20250815_181747.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462164/IMG_20250815_181743.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462163/IMG_20250815_181806.jpg
+  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462161/IMG_20250815_181954.jpg
+---
