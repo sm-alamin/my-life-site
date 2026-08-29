@@ -3,7 +3,6 @@ layout: layouts/gallery.njk
 title: নদী, মানুষ আর ফেলে আসা শৈশব
 date: 2026-08-23
 images:
-  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462105/IMG_20260531_143335.jpg
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462098/IMG_20260531_143332.jpg
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462098/IMG_20260531_175356.jpg
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787462104/IMG_20260531_175710.jpg
