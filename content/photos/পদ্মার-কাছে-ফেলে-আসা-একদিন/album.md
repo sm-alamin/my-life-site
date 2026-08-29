@@ -14,5 +14,4 @@ images:
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787466448/IMG_20260322_125641113.jpg
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787466451/IMG_20260322_143236609.jpg
   - https://res.cloudinary.com/gnzhxcau/image/upload/v1787466450/IMG_20260322_141928863.jpg
-  - https://res.cloudinary.com/gnzhxcau/image/upload/v1787466452/IMG_20260322_145712114.jpg
 ---
