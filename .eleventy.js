@@ -26,6 +26,11 @@ module.exports = function (eleventyConfig) {
 eleventyConfig.addCollection("poems", (collectionApi) => {
   return collectionApi.getFilteredByGlob("content/poems/**/poem.md");
 });
+eleventyConfig.addFilter("cloudinaryOptimize", (url, width) => {
+  if (!url || !url.includes("/upload/")) return url;
+  const w = width || 600;
+  return url.replace("/upload/", `/upload/w_${w},q_auto,f_auto/`);
+});
 
   return {
     dir: {

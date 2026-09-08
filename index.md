@@ -65,7 +65,7 @@ templateEngineOverride: njk
     </div>
     <div class="masonry-grid">
   {% for img in album.data.images %}
-  <img src="{{ img }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger">
+  <img src="{{ img | cloudinaryOptimize(500) }}" alt="{{ album.data.title }}" loading="lazy" class="lightbox-trigger" data-full="{{ img | cloudinaryOptimize(1600) }}">
   {% endfor %}
 </div>
   </div>

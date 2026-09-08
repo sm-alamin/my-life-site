@@ -11,7 +11,7 @@ layout: layouts/base.njk
 
   <div class="masonry-grid">
     {% for img in images %}
-      <img src="{{ img }}" alt="{{ title }}" loading="lazy" class="lightbox-trigger">
+      <img src="{{ img | cloudinaryOptimize(500) }}" alt="{{ title }}" loading="lazy" class="lightbox-trigger" data-full="{{ img | cloudinaryOptimize(1600) }}">
     {% endfor %}
   </div>
 </article>

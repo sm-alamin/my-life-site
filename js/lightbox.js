@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   triggers.forEach((img) => {
     img.addEventListener("click", () => {
-      overlayImg.src = img.src;
+  overlayImg.src = img.dataset.full || img.src;
       overlay.classList.add("active");
     });
   });
