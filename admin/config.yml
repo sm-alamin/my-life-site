@@ -8,8 +8,8 @@ public_folder: "/uploads"
 media_library:
   name: cloudinary
   config:
-    cloud_name: gnzhxcau
-    api_key: 869491552173931
+    cloud_name: ky5upxca
+    api_key: 178247517943814
     
 
 
